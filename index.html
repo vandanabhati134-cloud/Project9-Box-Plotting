@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Plotting</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+    }
+    .box{
+        margin: auto;
+        height: 500px;
+        width: 800px;   
+        background-color: skyblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .box1{
+        height: 80%;
+        width: 80%;
+        background-color: blue;
+        /* border: 20px solid navy;
+        margin: 40px 20px 20px 60px;
+        padding: 60px 20px 20px 80px ; */
+    }
+    .box2{
+         height: 80%;
+        width: 80%;
+        background-color:orange;
+        border: 20px solid navy;
+        /* text-align: center;
+        line-height: 140px; */
+        margin: 40px 0px 40px 60px;
+        padding: 50px 0px 0px 80px;
+    }
+    .box3{
+        height: 80%;
+        width: 80%;
+        color: white;
+        text-align: center;
+        line-height: 180px;
+        background-color: rebeccapurple;
+    }
+    .margin,.border,.padding{
+        position: absolute;
+        left: 48%;
+        color: white;
+    }
+    .margin{
+        top: 100px;
+    }
+    .border{
+        top: 130px;
+    }
+    .padding{
+        top: 160px;
+    }
+</style>
+<body>
+    <h1 align="center">Box Plotting</h1>
+    <div class="box">
+        <div class="box1">
+            <div class="margin">Margin</div>
+            <div class="box2">
+                <div class="border">Border</div>
+                <div class="padding">Padding</div>
+                <div class="box3">Content</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
